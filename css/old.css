@@ -1,0 +1,92 @@
+body {
+  background-color: orange;
+}
+/* NAVBAR BASE STYLE */
+.topnav {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  flex-wrap: wrap; /* allows wrapping in responsive */
+}
+/* Nav links */
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 150px;
+  display: flex;
+  align-items: center;     /* vertical centering */
+  justify-content: center; /* horizontal centering */
+}
+/* Hover effect */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Active link */
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+/* Hamburger icon - hidden by default */
+.topnav .icon {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 16px;
+}
+/* Responsive - small screens */
+@media screen and (max-width: 800px) {
+  /* Retire le width fixe en mobile */
+  .topnav a {
+    width: auto;
+  }
+  
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    display: flex;
+    height: 48px;
+    width: 30px;
+  }
+  
+  /* Ajuste le logo pour mobile */
+  .topnav a:first-child {
+    padding: 8px;
+  }
+  .topnav a:first-child img {
+    width: 60px;
+  }
+  
+  .topnav.responsive {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .topnav.responsive a {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+    box-sizing: border-box; /* Important ! */
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: auto;
+    color: black;
+    height: 75px;
+  }
+  .topnav.responsive a:not(.icon):not(:first-child) {
+    display: flex;
+  }
+}
