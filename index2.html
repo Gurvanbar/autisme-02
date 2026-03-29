@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Bienvenue sur le site de l'association Autisme 02. Découvrez notre association et les activités que nous proposons !">
+    <meta name="description"
+        content="Bienvenue sur le site de l'association Autisme 02. Découvrez notre association et les activités que nous proposons !">
     <meta name="keywords" content="Autisme 02, Autisme, Association, Aisne">
     <meta name="author" content="Gurvan Bardelang">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Autisme 02</title>
+    <title>accueil</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
 
     <nav>
         <div class="logo">
-            <img class="logoSmall" src="images/logo200v2.png" alt="Logo Autisme 02">
+            <img class="round" src="images/Autisme02_logo_nav.webp">
         </div>
         <div class="reste">
-            <h2 class="repEduc">vers une réponse éducative</h2>
-            <div class="boutons-container">
-                <a class="bouton-nav" href="https://www.helloasso.com/associations/autisme-02/adhesions/adhesion-2025" target="_blank">Adhérer</a>
-                <a class="bouton-nav" href="https://www.helloasso.com/associations/autisme-02/formulaires/1" target="_blank">Donner</a>
-                <a class="bouton-nav" href="https://www.helloasso.com/associations/autisme-02/adhesions/groupes-de-socialisation" target="_blank">Groupes de Socialisation</a>
+            <h1>
+                <b>
+                    Autisme 02
+                </b>
+            </h1>
+            <h2>
+                vers une réponse éducative
+            </h2>
+            <div class="nav-bouttons">
+                <a href="">
+                    <button id="adherer">ADHERER</button>
+                </a>
+                <a href="">
+                    <button id="don">Faire un DON</button>
+                </a>
             </div>
         </div>
     </nav>
@@ -35,27 +50,32 @@
         </div>
     </div>
 
+    <!-- Slideshow container -->
     <div class="images-container-tiny">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 2</div>
-                <img src="images/bonne_rentree.jpg" style="width:100%" alt="Affiche bonne rentrée">
-            </div>
+    <div class="slideshow-container">
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 2</div>
-                <img src="images/GEM.png" style="width:100%" alt="Affiche GEM">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="images/bonne_rentree.jpg" style="width:100%">
         </div>
-        <br>
 
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="images/GEM.png" style="width:100%">
         </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
     </div>
 
     <div class="container-historique">
@@ -72,7 +92,6 @@
                 </div>
                 <div class="card-content">
                     <p>Autisme 02 est une association départementale (Association loi 1901) de l'Aisne, créée en 1998, à l'initiative de parents d'enfants et d'adultes avec autisme ou troubles envahissants du développement.</p>
-                    <p>L'autisme est un trouble du neuro-développement qui débute avant l'âge de 3 ans, aux origines multifactorielles, notamment génétique.</p>
                 </div>
             </div>
 
@@ -112,71 +131,57 @@
             <div class="card">
                 <div class="card-header">
                     <div class="icon">i</div>
+                    <h2>Une définition</h2>
+                </div>
+                <div class="card-content">
+                    <p>L'autisme est un trouble du neuro-développement qui débute avant l'âge de 3 ans, aux origines multifactorielles, notamment génétique.</p>
+                </div>
+            </div>
+                        <div class="card">
+                <div class="card-header">
+                    <div class="icon">i</div>
                     <h2>Défendre, Comprendre, Accompagner</h2>
                 </div>
                 <div class="card-content">
                     <ul>
                         <li>Les familles qui viennent de découvrir le handicap de leur enfant.</li>
-                        <li>Les démarches administratives</li>
-                        <li>Nos jeunes en recherche d'inclusion scolaire, professionnelle et sociale</li>
-                        <li>Nos jeunes en recherche de projet de vie adulte, et/ou d'établissement</li>
-                        <li>Nos adultes en hôpital psychiatrique condamnés à l'enfermement à perpétuité pour cause d'autisme</li>
-                        <li>Ceux de haut niveau qui ont besoin d'aide et d'accompagnement</li>
-                        <li>Toutes les familles sans solution</li>
+                        <li>Nos jeunes ...</li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="card-header">
                     <div class="icon">i</div>
-                    <h2>L'association "Autisme02"</h2>
+                    <h2>Présence de Autisme 02</h2>
                 </div>
                 <div class="card-content">
-                    <ul>
-                        <li>est en Commission Des Droits et de l'Autonomie des Personnes Handicapées de la MDPH (CDAPH)</li>
-                        <li>est en Conseil Départemental de la Citoyenneté et de l'Autonomie (CDCA)</li>
-                        <li>est marraine du Groupe d'Entraide Mutuelle TSA de l'Aisne (GEM)</li>
-                        <li>favorise les relations avec l'ARS, le Conseil Départemental, la MDPH, l'Education Nationale, le Centre Ressource Autisme, et plus encore.</li>
-                    </ul>
-                </div>
-            </div>
-                
-            <div class="card">
-                <div class="card-header">
-                    <div class="icon">i</div>
-                    <h2>"Autisme02" revendique</h2>
-                </div>
-                <div class="card-content">
-                    <ul>
-                        <li>L'inclusion pour tous.</li>
-                        <li>Le respect des recommandations et des méthodes préconisées (ABA, TEACCH, PECS...) par la Haute Autorité de Santé (HAS)</li>
-                    </ul>
+                    <!-- Contenu à compléter -->
                 </div>
             </div>
         </div>
     </div>
 
     <hr>
-    
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-section">
                 <h3>Contact</h3>
                 <ul>
-                    <li><a href="mailto:contact@autisme02.fr">Contact site web</a></li>
-                    <li><a href="mailto:presidence.autisme.02@gmail.com">Présidence association</a></li>
-                 </ul>
+                    <li><a href="#">lien de contact</a></li>
+                    <li><a href="mailto:">presidence.autisme.02</a></li>
+                    <li><a href="mailto:simbeal@yahoo.fr">Alain Bourdens</a></li>
+                </ul>
             </div>
 
             <div class="footer-section">
                 <h3>Autres Liens</h3>
                 <ul>
-                    <li><a href="https://www.autisme-france.fr/" target="_blank">AUTISME FRANCE</a></li>
-                    <li><a href="https://mdphenligne.cnsa.fr/" target="_blank">MDPH</a></li>
-                    <li><a href="https://www.ameli.fr/" target="_blank">SÉCURITÉ SOCIALE</a></li>
+                    <li><a href="https://www.autisme-france.fr/">AUTISME FRANCE</a></li>
+                    <li><a href="https://mdphenligne.cnsa.fr/">MDPH</a></li>
+                    <li><a href="https://www.ameli.fr/">SECURITE SOCIALE</a></li>
                     <li>
-                        <a href="https://www.facebook.com/p/Autisme-02-100083941822307/?locale=fr_FR" target="_blank" class="facebook-link">
+                        <a href="https://www.facebook.com/p/Autisme-02-100083941822307/?locale=fr_FR" class="facebook-link">
                             <svg class="facebook-icon" viewBox="0 0 24 24" fill="#1877F2">
                                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                             </svg>
@@ -187,10 +192,8 @@
             </div>
 
             <div class="footer-section">
-                <div id="gMap">
-                    <h3>Location Maison des Associations Soissons</h3>
-                    <iframe class="gmapStyle" src="https://maps.google.com/maps?q=Maison+des+Associations+Soissons&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>    
+                <h3>Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.99162611095!2d2.2919063752645696!3d48.858370071332104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2skr!4v1762622032868!5m2!1sfr!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </footer>
@@ -198,4 +201,5 @@
     <script type="text/javascript" src="javascript/slide-show.js"></script>
 
 </body>
+
 </html>

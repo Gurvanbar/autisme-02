@@ -3,13 +3,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  width: 90%;
+  font-family: "Roboto";
+  width: 70%;
   margin: auto;
 }
 
 nav {
-  background-color: #70a6aa;
+  background-color: #7f8c8d;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,34 +17,18 @@ nav {
   margin-bottom: 60px;
 }
 
-.round {
-  border-radius: 50%;
-  width: 200px;
-}
 
 .logo {
-  max-width: 50%;
-  height: auto;
-}
-
-/* Ajout effet texte h2 dans bannière */
-.repEduc {
-  font-size: 2.5rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-  letter-spacing: 2px;
-  margin: 2rem 0;
-  text-align: center;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .reste {
   width: 70%;
   display: flex;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -57,6 +41,13 @@ nav {
   margin-top: 0px;
 }
 
+.reste h2 {
+  font-size: 1em;
+  font-weight: normal;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
 .reste button {
   width: 120px;
   padding: 10px 20px;
@@ -65,55 +56,32 @@ nav {
   border: 2px solid;
 }
 
-/* Bouttons de navigation*/
-.boutons-container {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
-.bouton-nav {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: transparent;
-  color: #333;
-  text-decoration: none;
-  border: 2px solid #333;
-  border-radius: 5px; 
-  font-size: 1em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease; 
-}
-
-.bouton-nav:hover {
-  background-color: #333; 
-  color: #fff;
-}
 
 /* Partie images côte à côte */
+
 .images-container {
   display: flex;
-  justify-content: center; /* Centre les deux blocs s'il y a de l'espace restant */
-  align-items: flex-start; /* Aligne les images vers le haut, ou change pour stretch si tu veux qu'elles fassent la même hauteur max */
-  gap: 20px; /* Ajoute un espace propre entre les deux images */
-  margin-bottom: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .image-container {
-  width: 48%; /* Chaque image prend presque la moitié de la place. Laisser 48% permet d'avoir du gap sans déborder */
+  width: 40%;
   display: flex;
   justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: #7f8c8d;
-  /* Supprimer la hauteur fixe (height: 800px;) permet à la div de s'adapter à la taille de l'image */
-  padding: 15px; /* Optionnel : un peu d'espace autour de l'image à l'intérieur de sa div grise */
-  box-sizing: border-box; /* Assure que le padding ne s'ajoute pas à la largeur de 48% */
+  height: 800px;
 }
 
 .image-container img {
-  width: 100%; /* L'image remplit la largeur de son conteneur (.image-container) */
-  height: auto; /* Conserve les proportions de l'image */
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -182,7 +150,6 @@ nav {
 }
 
 .card-content {
-  font-size: 1.5rem;
   padding-left: 47px;
   color: #4a5568;
   line-height: 1.6;
@@ -211,7 +178,8 @@ nav {
   font-weight: bold;
 }
 
-/* Partie footer */
+/*Partie footer*/
+
 .footer {
   background-color: white;
   padding: 40px;
@@ -272,20 +240,7 @@ nav {
   height: 24px;
 }
 
-/* Style de la map Google */
-.gmapStyle {
-  width: 600px;
-  height: 450px;
-  border: 0;
-}
-
-/* --- MEDIA QUERIES --- */
-
 @media (max-width: 968px) {
-  .repEduc {
-    font-size: 1.5rem;
-  }
-  
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -294,7 +249,9 @@ nav {
   .footer {
     padding: 30px 20px;
   }
-  
+}
+
+@media (max-width: 968px) {
   .container-historique {
     padding: 30px;
   }
@@ -306,11 +263,6 @@ nav {
 
   .bottom-row {
     grid-template-columns: 1fr;
-  }
-  
-  .gmapStyle {
-    height: 335px;
-    width: 100%;
   }
 }
 
@@ -337,11 +289,6 @@ nav {
     height: 28px;
     font-size: 14px;
   }
-  
-  .gmapStyle {
-    height: 335px;
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -350,7 +297,7 @@ nav {
   }
 
   * {
-    box-sizing: border-box;
+    box-sizing: border-box
   }
 
   .images-container-tiny {
@@ -367,10 +314,12 @@ nav {
     display: block;
   }
 
+  /* Hide the images by default */
   .mySlides {
     display: none;
   }
 
+  /* Next & previous buttons */
   .prev,
   .next {
     cursor: pointer;
@@ -387,16 +336,19 @@ nav {
     user-select: none;
   }
 
+  /* Position the "next button" to the right */
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
 
+  /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
+  /* Caption text */
   .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -407,6 +359,7 @@ nav {
     text-align: center;
   }
 
+  /* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -415,6 +368,7 @@ nav {
     top: 0;
   }
 
+  /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
     height: 15px;
@@ -431,38 +385,31 @@ nav {
     background-color: #717171;
   }
 
+  /* Fading animation */
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
 
   @keyframes fade {
-    from { opacity: .4 }
-    to { opacity: 1 }
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
   }
-  
-  .gmapStyle {
-    height: 335px;
-    width: 100%;
-  }
-} /* <-- C'est cette accolade qui manquait ! */
+}
+
+
 
 @media screen and (max-width: 768px) {
-  .logoSmall {
-    width: 80px;
-    height: 80px;
-  }
-  
   .reste {
     padding-right: 0%;
   }
 
   .round {
     width: 150px;
-  }
-  
-  .gmapStyle {
-    height: 335px;
-    width: 100%;
   }
 }
